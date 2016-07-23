@@ -1,0 +1,58 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script type="text/javascript">
+		function re_load(){
+			location.reload();
+		}
+		
+		function change_title(){
+			document.title = 'test js dom';
+		}
+		
+		console.log('window.innerWidth:'+window.innerWidth);
+		console.log('window.innerHeight:'+window.innerHeight);
+		console.log('window.outerWidth:'+window.outerWidth);
+		console.log('window.outerHeight:'+window.outerHeight);
+		console.log('------------------');
+		console.log('navigator.appName:'+navigator.appName);
+		console.log('navigator.appVersion:'+navigator.appVersion);
+		console.log('navigator.language:'+navigator.language);
+		console.log('navigator.platform:'+navigator.platform);
+		console.log('navigator.userAgent:'+navigator.userAgent);
+		console.log('------------------');
+		console.log('screen.width:'+screen.width);
+		console.log('screen.height:'+screen.height);
+		console.log('screen.colorDepth:'+screen.colorDepth);
+		console.log('------------------');
+		console.log('location.href:'+location.href);
+		console.log('location.protocol:'+location.protocol);
+		console.log('location.host:'+location.host);
+		console.log('location.port:'+location.port);
+		console.log('location.pathname:'+location.pathname);
+		console.log('location.search:'+location.search);
+		console.log('location.hash:'+location.hash);
+		console.log('------------------');
+	</script>
+</head>
+<body>
+	learn javascript.
+	<br/>
+	window.
+	<br/>
+	<input type='button' value ='reload' onclick = 're_load()'></input><br/>
+	<input type='button' value ='changeTitle' onclick = 'change_title()'></input><br/>
+	<dl id="drink-menu" style="border:solid 1px red;padding:6px;">
+		<dt>摩卡</dt>
+		<dd>热摩卡咖啡</dd>
+		<dt>酸奶</dt>
+		<dd>北京老酸奶</dd>
+		<dt>果汁</dt>
+		<dd>鲜榨苹果汁</dd>
+	</dl>
+	<script type="text/javascript">
+		var menu = document.getElementById('drink-menu');
+		console.log(menu);
+	</script>
+</body>
+</html>

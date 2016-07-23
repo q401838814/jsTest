@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script type="text/javascript">
+		/*
+		var student = {
+			name: 'student',
+			height: 1.6,
+			run: function () {
+				console.log(this.name + ' is running...');
+			}
+		};
+		
+		var bird = {
+			name: 'bird',
+			fly:function(){
+				console.log(this.name + ' is flying...');
+			}
+		};
+		
+		var s1 = {
+			name:'s1'
+		};
+		
+		s1.__proto__ = student;
+		console.log(s1);
+		console.log(s1.name);
+		console.log(s1.height);
+		s1.run();
+		s1.__proto__ = bird;
+		s1.fly();
+		console.log('------------------');
+		*/
+		function People(name) {
+			this.name = name;
+			this.hello = function () {
+				console.log('Hello, ' + this.name + '!');
+			}
+			this.hello2 = function () {
+				console.log('Hello2, ' + this.name + '!');
+			}
+		}
+		
+		People.prototype.hello3 = function(){
+			console.log('Hello3, ' + this.name + '!');
+		};
+		
+		var p1 = new People('aaa');
+		console.log(People.prototype);
+		console.log(p1);
+		p1.hello();
+		p1.hello2();
+		p1.hello3();
+		console.log(JSON.stringify(p1));
+		console.log('------------------');
+	</script>
+</head>
+<body>
+	learn javascript.
+	oop.
+</body>
+</html>
